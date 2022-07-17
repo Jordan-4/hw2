@@ -3,6 +3,8 @@
 <head>
     <link rel='stylesheet' href='{{ url("css/login.css") }}'>
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <script src="{{ url('js/user.js') }}" defer></script>
+
 </head>
 
 <body>

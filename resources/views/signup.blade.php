@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <script src='landing.js' defer="true"></script> -->
     <link rel='stylesheet' href='{{url("css/login.css")}}'>
+    <script src="{{ url('js/user.js') }}" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -26,12 +27,13 @@
     <form name='signup_form' class="form-signin" method='post'>       
         @csrf
         <h2 class="form-signin-heading">Please register</h2>
-        <input type="text" class="form-control" name="username" placeholder="Username" required="" autofocus="" />
+        <input id="username" type="text" class="form-control" name="username" placeholder="Username" required="" autofocus="" />
         <div id='err_user' class='signup_error hidden'>Invalid username (16 char max)</div>
-        <input type="email" class="form-control-mail" name="email" placeholder="Email Address" required="" autofocus="" />
+        <input id="email" type="email" class="form-control-mail" name="email" placeholder="Email Address" required="" autofocus="" />
         <div id='err_email' class='signup_error hidden'>Invalid email</div>
-        <input type="password" class="form-control" name="password" placeholder="Password" required=""/> 
-        <div id='err_pass' class='signup_error hidden'>Make password atleast 8 char max</div>
+        <input id="password" type="password" class="form-control" name="password" placeholder="Password" required=""/> 
+        <div id='err_pass' class='signup_error hidden'>Make password atleast 8 char min</div>
+        <div id="final_error" class="signup_error hidden">Rivedi le tue credenzioli</div>
         <input class="btn btn-2" type="submit" value='Register'>   
     </form>
 

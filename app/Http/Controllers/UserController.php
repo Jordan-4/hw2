@@ -27,14 +27,14 @@ class UserController extends BaseController
 
         $user = User::where('username', request('username')) -> first();
 
-        if(!$user || !strcmp(request("password"), $user->password)) {
-            Session::put('error', 'credenziali_errate');
-            return redirect('login')->withInput();
-        }
-        // if (!$user || !password_verify(request('password'), $user -> password)) {
+        // if(!$user || !strcmp(request("password"), $user->password)) {
         //     Session::put('error', 'credenziali_errate');
         //     return redirect('login')->withInput();
         // }
+        if (!$user || !password_verify(request('password'), $user -> password)) {
+            Session::put('error', 'credenziali_errate');
+            return redirect('login')->withInput();
+        }
 
         Session::put('id', $user->id);
         return redirect('home');
@@ -94,6 +94,18 @@ class UserController extends BaseController
         $user->save();
         Session::put('id', $user->id);
         return redirect('home');
+    }
+
+    public function user_check(){
+        $query = request();
+        $bool = User::where('username',$query['query'])->exists();
+        return ['exists'=>$bool];
+    }
+
+    public function email_check(){
+        $query = request();
+        $bool = User::where('email',$query['query'])->exists();
+        return ['exists'=>$bool];
     }
 
     public function logout()

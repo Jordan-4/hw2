@@ -23,8 +23,9 @@ Route::post('login', 'App\Http\Controllers\UserController@do_login');
 Route::get('signup', 'App\Http\Controllers\UserController@signup_page');
 Route::post('signup', 'App\Http\Controllers\UserController@do_signup');
 
+Route::get('signup/email/{query}', 'App\Http\Controllers\UserController@email_check');
+Route::get('signup/username/{query}', 'App\Http\Controllers\UserController@user_check');
+
 Route::get("logout", "App\Http\Controllers\UserController@logout");
 
-Route::get("home", function() {
-    return "sex";
-});
+Route::get("home", "App\Http\Controllers\HomeController@index");
