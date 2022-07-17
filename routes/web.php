@@ -29,3 +29,5 @@ Route::get('signup/username/{query}', 'App\Http\Controllers\UserController@user_
 Route::get("logout", "App\Http\Controllers\UserController@logout");
 
 Route::get("home", "App\Http\Controllers\HomeController@index");
+
+Route::get("wallpaper", "App\Http\Controllers\BackgroundController@random_background");

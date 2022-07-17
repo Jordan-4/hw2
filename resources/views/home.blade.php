@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel='stylesheet' href='{{url("css/home.css")}}'>
-        <script src='home.js' defer></script>
+        <script src='js/home.js' defer></script>
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Montserrat:wght@200&family=Playfair+Display&family=Questrial&display=swap" rel="stylesheet">
     </head>
 
@@ -20,8 +20,9 @@
             
             <header>
                 <div id="static">
-                <h1>Post It</h1>
+                    <h1>Post It</h1>
                 </div>
+                <img id= 'wallpaper'></img> 
                 <div id="overlay"></div>
             </header>
             
@@ -30,14 +31,14 @@
                 <em>Last update: today</em> 
             </div>
 
-            <div class="api">  
+            <!-- <div class="api">  
                 <form id="wiki">
                     Find a post
                     <input type="text" id="search" />
                     <input type="submit" value="Cerca">
                     <div id="div1"></div>
                 </form>
-            </div>
+            </div> -->
 
             <div class='post_home'>
                 <article>
