@@ -27,3 +27,4 @@ class BackgroundController extends BaseController
         echo $response;
     }
 }
+

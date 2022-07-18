@@ -12,11 +12,17 @@ textarea {
     outline: none;
     width: calc(100% - 22px);
     min-height: 200px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     border-radius: 5px;
     border: 1px solid lightgray;
     font-size: 20px;
     font-family: "arial","helvetica",sans-serif;
+}
+
+#create {
+    font-size: 30px;
+    color: black !important;; 
+    z-index: 1;
 }
 
 textarea:hover{

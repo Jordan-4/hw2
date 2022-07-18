@@ -7,7 +7,7 @@
         <title>Document</title>
         <link rel='stylesheet' href='{{url("css/home.css")}}'>
         <script src='{{url("js/wallpaper.js")}}' defer></script>
-        <script src='{{url("js/post.js")}}' defer></script>
+        <script src='{{url("js/my_post.js")}}' defer></script>
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Montserrat:wght@200&family=Playfair+Display&family=Questrial&display=swap" rel="stylesheet">
     </head>
 
@@ -21,20 +21,11 @@
             
             <header>
                 <div id="static">
-                    <h1>Post It</h1>
+                    <h1>Your posts</h1>
                 </div>
                 <img id= 'wallpaper'></img>
                 <div id="overlay"></div>
             </header>
-            
-            <div class="dati">
-                <strong>{{ $username }}</strong><br>
-                <em>Last update: today</em> 
-            </div>
-
-            @if(session("success"))
-            <span id="response" class="status">{{ session("success") }}</span>
-            @endif
 
             <div class='post_home'>
                 <article>

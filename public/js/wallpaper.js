@@ -11,8 +11,4 @@ function onError(error) {
     console.log(error);
 }
 
-// function fetchPosts() {
-//     fetch("post").then(onResponse).then(onJson);
-// }
-
-fetch("wallpaper").then(onResponse, onError).then(onJsonWallpaper);
+//fetch("wallpaper").then(onResponse, onError).then(onJsonWallpaper);

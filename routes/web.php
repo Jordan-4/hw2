@@ -31,3 +31,13 @@ Route::get("logout", "App\Http\Controllers\UserController@logout");
 Route::get("home", "App\Http\Controllers\HomeController@index");
 
 Route::get("wallpaper", "App\Http\Controllers\BackgroundController@random_background");
+
+Route::get("create", "App\Http\Controllers\PostController@create_page");
+Route::post("create", "App\Http\Controllers\PostController@do_create");
+
+Route::get("fetch", "App\Http\Controllers\PostController@fetch_all");
+
+Route::get("profile", "App\Http\Controllers\PostController@profile_page");
+Route::get("my_posts", "App\Http\Controllers\PostController@my_posts");
+
+Route::get('delete/{q}', 'App\Http\Controllers\PostController@delete_post'); 
