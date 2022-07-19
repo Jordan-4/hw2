@@ -22,9 +22,10 @@
 
             
             <input class="btn" type="submit" value='Login'>
+            <a class="btn" id='register' href='{{url("signup")}}'>Registrati</a>
         </form>
 
-        <a value='Register' class="btn btn-2" id='register' href='{{url("signup")}}'>
+        
 
     </div>
 </body>

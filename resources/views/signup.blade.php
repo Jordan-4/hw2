@@ -32,12 +32,13 @@
         <input id="email" type="email" class="form-control-mail" name="email" placeholder="Email Address" required="" autofocus="" />
         <div id='err_email' class='signup_error hidden'>Invalid email</div>
         <input id="password" type="password" class="form-control" name="password" placeholder="Password" required=""/> 
-        <div id='err_pass' class='signup_error hidden'>Make password atleast 8 char min</div>
-        <div id="final_error" class="signup_error hidden">Rivedi le tue credenzioli</div>
-        <input class="btn btn-2" type="submit" value='Register'>   
+        <div id='err_pass' class='signup_error hidden'>Make password atleast 8 char</div>
+        <div id="final_error" class="signup_error hidden">Rivedi le tue credenziali</div>
+        <input class="btn" type="submit" value='Register'>   
+        <a class="btn" id='register' href='{{url("login")}}'>Login</a>
     </form>
 
-    <a value='Login' class="btn btn-2" id='register' href='{{url("login")}}'>
+   
 </div>
 </body>
 </html>

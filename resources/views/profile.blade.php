@@ -24,7 +24,7 @@
                     <h1>Your posts</h1>
                 </div>
                 <img id= 'wallpaper'></img>
-                <div id="overlay"></div>
+                <!-- <div id="overlay"></div> -->
             </header>
 
             <div class='post_home'>
@@ -34,9 +34,4 @@
             </div>
         </body>
 
-        <!-- <footer>
-            <p> <em>Jordan Codice</em> <br>
-            1000001433 
-            </p>
-        </footer> -->
 </html>

@@ -79,4 +79,22 @@ class PostController extends BaseController
         if ($post->autore != Session::get('id')) return redirect('home');
         $post->delete();
     }
+
+    public function trova_post($q)
+    {
+        if (!Session::get('id')) return redirect('login');
+        $array = [];
+        $post_s = Post::where('titolo', 'like', '%' . $q . '%')->orWhere('contenuto', 'like', '%' . $q . '%')->orderBy('id', 'desc')->get();
+        foreach ($post_s as $row) {
+            $user = User::where('id', $row['autore'])->first();
+
+            $array[] = array(
+                "id" => $row["id"],
+                "autore" => $user->username,
+                "titolo" => $row["titolo"],
+                "contenuto" => $row["contenuto"]
+            );
+        }
+        return $array;
+    }
 }

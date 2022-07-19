@@ -41,3 +41,5 @@ Route::get("profile", "App\Http\Controllers\PostController@profile_page");
 Route::get("my_posts", "App\Http\Controllers\PostController@my_posts");
 
 Route::get('delete/{q}', 'App\Http\Controllers\PostController@delete_post'); 
+
+Route::get('find/{q}', 'App\Http\Controllers\PostController@trova_post');

@@ -8,6 +8,7 @@
         <link rel='stylesheet' href='{{url("css/home.css")}}'>
         <script src='{{url("js/wallpaper.js")}}' defer></script>
         <script src='{{url("js/post.js")}}' defer></script>
+        <script src='{{url("js/search.js")}}' defer></script>
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Montserrat:wght@200&family=Playfair+Display&family=Questrial&display=swap" rel="stylesheet">
     </head>
 
@@ -24,7 +25,7 @@
                     <h1>Post It</h1>
                 </div>
                 <img id= 'wallpaper'></img>
-                <div id="overlay"></div>
+                <!-- <div id="overlay"></div> -->
             </header>
             
             <div class="dati">
@@ -32,20 +33,21 @@
                 <em>Last update: today</em> 
             </div>
 
+            <div class="trova_post">  
+                <form class='search'>
+                    Find a post
+                    <input type="text" id="search"/>
+                    <input type="submit" value="Cerca">
+                </form>
+            </div>
+
             @if(session("success"))
             <span id="response" class="status">{{ session("success") }}</span>
             @endif
 
             <div class='post_home'>
-                <article>
-                    
-                </article>
+                
             </div>
         </body>
 
-        <!-- <footer>
-            <p> <em>Jordan Codice</em> <br>
-            1000001433 
-            </p>
-        </footer> -->
 </html>

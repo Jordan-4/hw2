@@ -26,7 +26,7 @@
             <h1>Create a post</h1>
         </div>
         <img id='wallpaper'></img>
-        <div id="overlay"></div>
+        <!-- <div id="overlay"></div> -->
     </header>
 
     <form method='post'>
@@ -37,12 +37,6 @@
         <label><input type="submit" value="pubblica">&nbsp;</label>
     </form>
 
-
-    <footer>
-        <p> <em>Jordan Codice</em> <br>
-            1000001433
-        </p>
-    </footer>
 </body>
 
 </html>
