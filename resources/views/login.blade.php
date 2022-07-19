@@ -8,6 +8,8 @@
 </head>
 
 <body>
+        <div id='top'> A site to share your stories</div>
+
     <div class="wrapper">
         @if($error == "campi_vuoti")
         <span>Campi vuoti</span>

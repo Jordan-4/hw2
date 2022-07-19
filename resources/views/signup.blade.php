@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src='landing.js' defer="true"></script> -->
     <link rel='stylesheet' href='{{url("css/login.css")}}'>
     <script src="{{ url('js/user.js') }}" defer></script>
     <title>Document</title>

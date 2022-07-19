@@ -44,6 +44,7 @@ navbar {
     justify-content: space-around;
     align-items: center;
     height: 70px;
+    background-color: #428bca;;
 }
   
 header {
@@ -94,7 +95,7 @@ h1 {
     text-align: center; 
     line-height: 23px;
     margin-top: -104px;
-    color: yellow;
+    color: white;
     
 }
   
@@ -118,6 +119,7 @@ article div {
 div.title {
     font-size: 30px;
     font-weight: bolder;
+    color: white;
 }
 
 div.author {
@@ -128,6 +130,7 @@ div.author {
     border-radius: 50px;
     font-family: 'Playfair Display';
     padding-left: 10px;
+    color: white;
 
 }
 
@@ -135,13 +138,14 @@ div.content {
     font-size: 25px;
     font-family: 'Dosis';
     word-break: break-all;
+    color: white;
 }
 
 div.post {
     margin-top: 60px;
     margin-left: 40px;
     margin-right: 40px;
-    background-color: lightgrey;
+    background-color: #428bca;
     border-radius: 8px;
     margin-bottom: 30px;
     padding: 20px;

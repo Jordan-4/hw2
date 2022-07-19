@@ -27,10 +27,7 @@ class UserController extends BaseController
 
         $user = User::where('username', request('username')) -> first();
 
-        // if(!$user || !strcmp(request("password"), $user->password)) {
-        //     Session::put('error', 'credenziali_errate');
-        //     return redirect('login')->withInput();
-        // }
+    
         if (!$user || !password_verify(request('password'), $user -> password)) {
             Session::put('error', 'credenziali_errate');
             return redirect('login')->withInput();
@@ -82,10 +79,6 @@ class UserController extends BaseController
             return redirect('signup');
         }
         
-        // else if (!preg_match('/^[a-zA-Z0-9_]{1,15}$/', request ('username'))) {
-        //     Session::put('error','username_non_valido');
-        //     return redirect('signup');
-        // }
         
         $user = new User;
         $user->username = request('username');
